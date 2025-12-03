@@ -7,7 +7,7 @@ use tailcall::tailcall;
 
 // https://adventofcode.com/2025/day/1
 fn main() {
-  let filename = "src/bin/day01/input-ignore.txt";
+  let filename = "src/bin/day01/input-real-ignore.txt";
   let input = fs::read_to_string(filename).expect("Failed to read input file");
   let numbers: Vec<i32> = input.lines().map(parse_line).collect();
 
@@ -76,7 +76,7 @@ fn check_part_1_answer(filename: &str, zero_position_count: u32) {
   println!("Part 1 answer: {0}", zero_position_count);
   match filename {
     "src/bin/day01/input-fake-ignore.txt" => assert_eq!(zero_position_count, 3),
-    "src/bin/day01/input-ignore.txt" => assert_eq!(zero_position_count, 1089),
+    "src/bin/day01/input-real-ignore.txt" => assert_eq!(zero_position_count, 1089),
     _ => panic!("Unexpected filename: {}", filename),
   }
 }
@@ -85,7 +85,7 @@ fn check_part_2_answer(filename: &str, zero_position_count: u32) {
   println!("Part 2 answer: {0}", zero_position_count);
   match filename {
     "src/bin/day01/input-fake-ignore.txt" => assert_eq!(zero_position_count, 6),
-    "src/bin/day01/input-ignore.txt" => assert_eq!(zero_position_count, 6530),
+    "src/bin/day01/input-real-ignore.txt" => assert_eq!(zero_position_count, 6530),
     _ => panic!("Unexpected filename: {filename}"),
   }
 }

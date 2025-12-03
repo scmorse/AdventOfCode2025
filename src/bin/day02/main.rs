@@ -2,7 +2,7 @@ use num_integer::div_rem;
 use std::fs;
 
 fn main() {
-  let filename = "src/bin/day02/input-ignore.txt";
+  let filename = "src/bin/day02/input-real-ignore.txt";
   let input = fs::read_to_string(filename).expect("Failed to read input file");
   let pairs: Vec<(&str, &str)> = parse_input_pairs(&input);
 
@@ -63,7 +63,7 @@ fn check_part_1_answer(filename: &str, answer: u64) {
   println!("Part 1 answer: {answer}");
   match filename {
     "src/bin/day02/input-fake-ignore.txt" => assert_eq!(answer, 1227775554),
-    "src/bin/day02/input-ignore.txt" => assert_eq!(answer, 30599400849),
+    "src/bin/day02/input-real-ignore.txt" => assert_eq!(answer, 30599400849),
     _ => panic!("Unexpected filename: {filename}"),
   }
 }
@@ -72,7 +72,7 @@ fn check_part_2_answer(filename: &str, answer: u64) {
   println!("Part 2 answer: {answer}");
   match filename {
     "src/bin/day02/input-fake-ignore.txt" => assert_eq!(answer, 4174379265),
-    "src/bin/day02/input-ignore.txt" => assert_eq!(answer, 46270373595),
+    "src/bin/day02/input-real-ignore.txt" => assert_eq!(answer, 46270373595),
     _ => panic!("Unexpected filename: {filename}"),
   }
 }
