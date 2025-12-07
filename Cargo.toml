@@ -6,3 +6,4 @@ edition = "2024"
 [dependencies]
 num-integer = "0.1.46"
 tailcall = "1.0.1"
+tap = "1.0.1"
