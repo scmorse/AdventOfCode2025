@@ -7,3 +7,7 @@ edition = "2024"
 num-integer = "0.1.46"
 tailcall = "1.0.1"
 tap = "1.0.1"
+itertools = "0.14.0"
+
+[profile.release]
+debug = true
