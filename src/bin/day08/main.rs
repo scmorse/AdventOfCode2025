@@ -1,6 +1,4 @@
-mod pairs;
-
-use crate::pairs::Pairs;
+use advent_of_code2025::pairs::Pairs;
 use itertools::Itertools;
 use std::cmp::{max, min};
 use std::collections::HashMap;
